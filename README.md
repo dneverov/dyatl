@@ -31,3 +31,22 @@ Rails 6.0.2.2
 * Deployment instructions
 
 * ...
+
+## Draft
+
+```
+rails db:create
+
+rails g scaffold Task title completed_at:datetime
+rake db:migrate
+```
+
+```
+rails s
+```
+
+[routes.rb](config/routes.rb)
+
+```
+root to: "tasks#index"
+```
