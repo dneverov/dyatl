@@ -1,14 +1,22 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @task.title %>
-</p>
+<div class="form-group row">
+  <div class="col-sm-2 col-form-label">
+    <strong>Title:</strong>
+  </div>
+  <div class="col-sm-10">
+    <%= @task.title %>
+  </div>
+</div>
 
-<p>
-  <strong>Completed at:</strong>
-  <%= @task.completed_at %>
-</p>
+<div class="form-group row">
+  <div class="col-sm-2 col-form-label">
+    <strong>Completed at:</strong>
+  </div>
+  <div class="col-sm-10">
+    <%= @task.completed_at %>
+  </div>
+</div>
 
 <%= link_to 'Edit', edit_task_path(@task) %> |
 <%= link_to 'Back', tasks_path %>

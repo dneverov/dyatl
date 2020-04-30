@@ -10,13 +10,14 @@
   </div>
 </div>
 
-<table class="table table-hover">
-  <thead class="thead-dark">
+
+<table class="table table-responsive table-hover w-100 d-block d-md-table">
+  <thead class="thead-light">
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">Title</th>
-      <th scope="col">Completed at</th>
-      <th scope="col" colspan="3"></th>
+      <th scope="col" class="col-sm-1">#</th>
+      <th scope="col" class="col-sm-6">Title</th>
+      <th scope="col" class="col-sm-3">Completed at</th>
+      <th scope="col" class="col-sm-2"></th>
     </tr>
   </thead>
 
@@ -26,9 +27,9 @@
         <th scope="row"><%= task.id %></th>
         <td><%= task.title %></td>
         <td><%= task.completed_at %></td>
-        <td><%= link_to 'Show', task %></td>
-        <td><%= link_to 'Edit', edit_task_path(task) %></td>
-        <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="text-right"><%= link_to 'Show', task %>
+          <%= link_to 'Edit', edit_task_path(task), class: 'm-1' %>
+          <%= link_to 'Destroy', task, method: :delete, class: 'text-danger', data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
