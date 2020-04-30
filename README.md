@@ -1,6 +1,12 @@
 # d´YATL
 
-dunno´why — Yet Another Todo List
+dunno´why — Yet Another Todo List.
+
+**Purpose**: A scaffold App to use in future projects.
+
+**How to use**: Fork it!
+
+**Branches**: [Branches list](#branches)
 
 ## README
 
@@ -49,6 +55,14 @@ rails db:seed
 * Deployment instructions
 
 * ...
+
+## Branches
+
+- _master_
+  - bootstrap
+    - scaffold_tasks
+      - (primal chaos)
+- _master_
 
 <!--
 ## Draft
