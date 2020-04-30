@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# Phases = ['Collect underpants', '?', 'Profit']
+# Phases.eac
+Task.create([{ title: 'Collect underpants' }, { title: '?' }, { title: 'Profit' }])

@@ -1,6 +1,6 @@
 # d´YATL
 
-d´ Yet Another Todo List
+dunno´why — Yet Another Todo List
 
 ## README
 
@@ -11,18 +11,36 @@ Things you may want to cover:
 
 * [x] Ruby version
 
+  - Ruby  2.6.5
+  - Rails 6.0.2.2
+
+
+* [x] System dependencies
+
+  - Bootstrap 4.4.1
+  - jQuery 4.3.5
+
+
+* [x] Configuration
+
+Add Bootstrap JS
+
 ```
-Ruby  2.6.5
-Rails 6.0.2.2
+yarn add bootstrap@4.4.1 jquery popper.js
 ```
 
-* System dependencies
+* [x] Database creation
 
-* Configuration
+```
+rails db:create
+```
 
-* Database creation
+* [x] Database initialization
 
-* Database initialization
+```
+rails db:migrate
+rails db:seed
+```
 
 * How to run the test suite
 
@@ -32,6 +50,7 @@ Rails 6.0.2.2
 
 * ...
 
+<!--
 ## Draft
 
 ### scaffold_tasks
@@ -89,3 +108,10 @@ require("@rails/activestorage").start()
 require("channels")
 require("bootstrap")
 ```
+
+### Fill db
+
+```
+rails db:seed
+```
+-->
