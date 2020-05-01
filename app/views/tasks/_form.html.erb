@@ -20,6 +20,8 @@
     <div class="form-group">
       <%= form.label :completed_at %>
       <%= form.datetime_select :completed_at, include_blank: true, class: 'form-control' %>
+      <%= check_box_tag :completed_checkbox, nil, task.completed_at?, data: {reflex: "click->ExampleReflex#toggle", id: task.id}, class: 'ml-2 mr-2' %>
+      <%= label_tag :completed_checkbox, (task.completed_at? ? 'Reset' : 'Complete'), class: 'text-primary' %>
     </div>
   <% end %>
 
