@@ -13,13 +13,15 @@
 
   <div class="form-group">
     <%= form.label :title %>
-    <%= form.text_field :title, class: 'form-control' %>
+    <%= form.text_field :title, class: 'form-control', data: {reflex: "change->ExampleReflex#form"} %>
   </div>
 
-  <div class="form-group">
-    <%= form.label :completed_at %>
-    <%= form.datetime_select :completed_at, include_blank: true, class: 'form-control' if task.persisted? %>
-  </div>
+  <% if task.persisted? %>
+    <div class="form-group">
+      <%= form.label :completed_at %>
+      <%= form.datetime_select :completed_at, include_blank: true, class: 'form-control' %>
+    </div>
+  <% end %>
 
   <div class="actions">
     <%= form.submit nil, class: "btn btn-primary" %>

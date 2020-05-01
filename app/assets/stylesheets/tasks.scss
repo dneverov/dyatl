@@ -6,3 +6,11 @@
     color: #5f007f;
   }
 }
+
+.table-tasks {
+  table-layout: fixed;
+  word-wrap: break-word;
+  .w-10 {
+    width: 10% !important;
+  }
+}

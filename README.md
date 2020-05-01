@@ -8,6 +8,18 @@ dunno´why — Yet Another Todo List.
 
 **Branches**: [Branches list](#branches)
 
+For a scaffolded app (without Stimulus Reflex) use [bootstrap](#branches) branch.
+
+## Stimulus Reflex
+
+After the [main instalation](#readme) try to:
+
+```
+rails webpacker:install:stimulus
+bundle add stimulus_reflex
+rails stimulus_reflex:install
+```
+
 ## README
 
 This README would normally document whatever steps are necessary to get the
