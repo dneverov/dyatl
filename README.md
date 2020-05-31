@@ -71,9 +71,10 @@ rails db:seed
 ## Branches
 
 - _master_
-  - bootstrap
-    - scaffold_tasks
-      - (primal chaos)
+  - stimulus_reflex
+    - bootstrap
+      - scaffold_tasks
+        - (primal chaos)
 - _master_
 
 <!--
